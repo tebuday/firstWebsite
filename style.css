@@ -1,116 +1,160 @@
 * {
-    box-sizing:border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html {
-    background-color:beige;
+html,
+body {
+  height: 175vh;
+  width: 100%;
+  background-color: black;
 }
 
-header {
-    background-color: teal;
-    width: 100%;
+nav {
+  background-color: teal;
+  box-shadow: 0 0 15px 6px white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 65px;
+  display: flex;
+  align-items: center;
 }
 
 body {
-    background-color:aqua;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0;
-    
+  background-color: aqua;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 100%;
 }
 
 main {
-    min-height: 100vh;
-}
-.project {
-    width: calc(75%);
-    background: gray;
-    color: black;
-    margin-left:10%;
-  }
-
-div {
-    font-size:36px;
-}
-
-#ports {
-    float:top;
+  min-height: 100vh;
+  padding-top: 100px;
 }
 
 a:link {
-    color:black;
-    text-decoration: none;
-    
+  color: black;
+  text-decoration: none;
 }
 
 a:visited {
-    color:black;
+  color: black;
 }
 
 a:hover {
-    color:azure;
-    border: 3px solid black;
+  color: azure;
+  border: 3px solid black;
 }
 
 a:active {
-    color:red;
-}
-
-h2 {
-    font-size:35px;
-    color:azure;
-    font-family: cursive;
-    padding:21px;
-    }
-
-#links {
-    font-size:23px;
-    color:black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-style:normal;
-    float:right;
-    padding:11px;
-}
-
-img {
-    height:300px;
-    width:400px;
-    float:right;
-    margin-right:50px;
-}
-#headings {
-    font-size:20px;
-    text-decoration: underline;
-}
-#top {
-    font-size: 30px;
-    border-bottom:blanchedalmond 2px;
-    color:azure;
-}
-
-#abouts {
-    border-bottom: blanchedalmond 2px;
-    color: black;
-    font-size: 26px;
-    margin-left: 75px;
-    text-decoration:underline;
+  color: red;
 }
 
 h1 {
-    text-align:center;
+  text-align: center;
+  padding-bottom: 10px;
 }
+
+h2 {
+  font-size: 35px;
+  color: azure;
+  font-family: cursive;
+  padding: 21px;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.links {
+  font-size: 23px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  position: absolute;
+  right: 50px;
+  padding: 11px;
+}
+
+.project {
+  width: calc(75%);
+  background: gray;
+  color: black;
+  margin-left: 12%;
+  border: solid;
+}
+
+div {
+  font-size: 36px;
+}
+
+#ports {
+  margin-left: 15%;
+}
+
+#proPhoto {
+  height: 250px;
+  float: right;
+  margin-right: 50px;
+}
+
+#aboutPhotos {
+  height: 250px;
+  float: right;
+  margin-right: 50px;
+}
+
+#headings {
+  font-size: 20px;
+  text-decoration: underline;
+}
+#top {
+  font-size: 25px;
+  color: black;
+}
+
+#abouts {
+  border-bottom: blanchedalmond 2px;
+  color: goldenrod;
+  font-size: 26px;
+  margin-left: 75px;
+  text-decoration: underline;
+}
+
 p {
-    font-size: 20px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-left:100px;
+  font-size: 16px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 100px;
 }
 
 ul {
-    margin-left:100px;
+  margin-left: 50px;
+  font-size: 24px;
 }
 
 #quote {
-    font-style:italic;
-    font-size: 24px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  margin: 75px;
+  border: dotted;
+}
+
+#current {
+  text-decoration: underline black;
+}
+
+.contact {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .flex {
+    width: 100px;
+    height: 100px;
+    margin: 1% 2%;
+  }
 }
